@@ -8,32 +8,42 @@ namespace Inheritance
         {
             // TODO Be sure to follow best practice when creating your classes
 
-            // Create a class Animal
-            // give this class 4 members that all Animals have in common
+            var cardinal = new Bird();
 
+            cardinal.Color = "Red";
+            cardinal.DoesItNest = true;
+            cardinal.IsItMigratory = true;
+            cardinal.Name = "Cardinal";
+            cardinal.Diet = "Worms";
+            cardinal.IsAggressive = true;
+            cardinal.LifeExpectancy = 5;
+            cardinal.Species = "Cardinalis cardinalis";
 
-            // Create a class Bird
-            // give this class 4 members that are specific to Bird
-            // Set this class to inherit from your Animal Class
+            Console.WriteLine("See below for data for the cardinal inherited from the animal class.");
+            cardinal.DisplayAnimalData();
+            Console.WriteLine("-------------------------");
+            Console.WriteLine("See below for data from the bird class for the cardinal.");
+            cardinal.DisplayBirdData();
+            Console.WriteLine("-------------------------");
 
-            // Create a class Reptile
-            // give this class 4 members that are specific to Reptile
-            // Set this class to inherit from your Animal Class
+            var crocodile = new Reptile();
 
+            crocodile.CanItRegenerate = false;
+            crocodile.IsItAmphibious = true;
+            crocodile.TeethAmount = 66;
+            crocodile.Name = "Crocodile";
+            crocodile.Diet = "Small dogs and human limbs";
+            crocodile.Species = "Crocodylidae";
+            crocodile.IsAggressive = true;
+            crocodile.LifeExpectancy = 40;
 
+            Console.WriteLine("See below for data for the crocodile inherited from the animal class.");
+            crocodile.DisplayAnimalData();
+            Console.WriteLine("-------------------------");
+            Console.WriteLine("See below for data from the reptile class for the crocodile.");
+            crocodile.DisplayReptileData();
+            Console.WriteLine("-------------------------");
 
-
-            /*Create an object of your Bird class
-             *  give values to your members using the object of your Bird class
-             *  
-             * Creatively display the class member values 
-             */
-
-            /*Create an object of your Reptile class
-             *  give values to your members using the object of your Reptile class
-             *  
-             * Creatively display the class member values 
-             */
         }
     }
 }
